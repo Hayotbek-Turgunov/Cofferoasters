@@ -188,6 +188,11 @@ img{
   white-space:nowrap;
 }
 
+ .sitenav-medium-font .sitenav-link{
+  font-size: 16px;
+  line-height: normal;
+ }
+
 .sitenav-link:hover{
   color:var(--accent-color-green);
 }
@@ -451,8 +456,57 @@ padding-left: 117px;
   outline-color:var(--accent-color-light-brown) ;
 }
 
+/* FOOTER */
+.site-footer {
+  background-color: var(--accent-color-light-brown);
+  background-image: url("../img/bg-img.jpg");
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.site-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.site-footer-logo-link {
+ display: flex;
+}
+.site-header-logo-img {
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.site-footer-logo-link:hover{
+  opacity: 0.8;
+}
+.site-footer-logo-link:active{
+  opacity: 0.6;
+}
+.site-footer-socials {
 
+}
+.socials {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+}
+.socials-item:not(:last-child) {
+  margin-right: 30px;
+}
+.socials-link {
+  display: flex;
+  color: #333;
+}
+.socials-link:hover{
+  color:var(--accent-color-green);
+}
+.socials-link:active{
+  opacity: 0.6;
+}
 /* RETINA-BG */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
